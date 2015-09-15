@@ -1,0 +1,16 @@
+{
+    "name": "vendor/name",
+    "authors": [
+        {
+            "name": "Piyush Kulkarni",
+            "email": "piyushcoolkarni@gmail.com"
+        }
+    ],
+    "require": {
+               "phploc/phploc":"*",
+               "phpmd/phpmd":"*",
+               "pdepend/pdepend":"*",
+               "phpunit/phpunit":"*",
+               "sebastian/phpcpd":"*"
+               }
+}

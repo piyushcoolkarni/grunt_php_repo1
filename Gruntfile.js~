@@ -1,0 +1,78 @@
+module.exports=function(grunt){
+
+
+var cfg = 
+{
+   dbconfig:grunt.file.readJSON('config.json'),
+
+
+    phplint:
+	{
+		options:
+		{
+		  phpCmd:'<%= dbconfig.cmdpath %>',
+		  
+		  phpArgs: {
+                "-l": null
+            },
+          
+		  spawnLimit: 10
+		  	  
+		  
+		},
+		
+        good: ["./ecomm_project/*.php"]
+        
+    },
+ phploc:
+{
+default :
+  {
+   dir:'ecomm_project'
+  },
+   options:
+    {
+     bin:'vendor/bin/phploc',
+     names:'*.php'
+    }
+
+}  ,
+
+  phpmd : 
+    {
+    application:
+            {
+            dir:'ecomm_project'
+            },
+      options:
+           {
+           bin:'vendor/bin/phpmd',
+           suffixes:'.php'
+           }
+
+
+    },
+
+   phpunit:
+    {
+    classes:{ dir:'tests'},
+    options:
+    {
+   bin :'vendor/bin/phpunit',
+  colors:true
+    }
+    }
+
+
+};
+ 
+grunt.initConfig(cfg);
+ 
+grunt.loadNpmTasks("grunt-phplint");
+grunt.loadNpmTasks("grunt-phploc");
+grunt.loadNpmTasks("grunt-phpmd");
+grunt.loadNpmTasks("grunt-phpunit"); 
+ 
+grunt.registerTask("default", ["phplint:good","phpmd","phploc","phpunit"]);
+
+}

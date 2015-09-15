@@ -1,0 +1,14 @@
+{
+"dbconfig":
+          {
+    "cmdpath":"/usr/bin/php",
+    "lintgood":"./ecomm_project/*.php",
+    "locdir":"ecomm_project",
+    "locbin":"vendor/bin/phploc",
+    "locnames":"*.php",
+    "mddir":"ecomm_project",
+    "mdbin":"vendor/bin/phpmd"
+       }
+}
+
+
