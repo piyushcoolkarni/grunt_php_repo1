@@ -100,7 +100,7 @@ phpcpd:
  jshint:
   
   {
-   all:['Gruntfile.js','ecomm_project/js/*'],
+   all:['Gruntfile.js'],
   options:
    {
    curly:true,
