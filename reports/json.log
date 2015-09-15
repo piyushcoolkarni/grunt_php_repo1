@@ -1,0 +1,69 @@
+{
+    "event": "suiteStart",
+    "suite": "tests\/",
+    "tests": 4
+}{
+    "event": "suiteStart",
+    "suite": "ConfigTest",
+    "tests": 4
+}{
+    "event": "testStart",
+    "suite": "ConfigTest",
+    "test": "ConfigTest::testHostconfiguration"
+}{
+    "event": "test",
+    "suite": "ConfigTest",
+    "test": "ConfigTest::testHostconfiguration",
+    "status": "pass",
+    "time": 0.0018270015716553,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "ConfigTest",
+    "test": "ConfigTest::testUserconfiguration"
+}{
+    "event": "test",
+    "suite": "ConfigTest",
+    "test": "ConfigTest::testUserconfiguration",
+    "status": "pass",
+    "time": 0.00023412704467773,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "ConfigTest",
+    "test": "ConfigTest::testPasswordconfiguration"
+}{
+    "event": "test",
+    "suite": "ConfigTest",
+    "test": "ConfigTest::testPasswordconfiguration",
+    "status": "pass",
+    "time": 0.00015687942504883,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "ConfigTest",
+    "test": "ConfigTest::testHelperconfiguration"
+}{
+    "event": "test",
+    "suite": "ConfigTest",
+    "test": "ConfigTest::testHelperconfiguration",
+    "status": "pass",
+    "time": 0.00016093254089355,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}

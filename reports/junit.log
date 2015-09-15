@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="tests/" tests="4" assertions="4" failures="0" errors="0" time="0.002379">
+    <testsuite name="ConfigTest" file="/home/student/Desktop/grunt-php/tests/config1Test.php" tests="4" assertions="4" failures="0" errors="0" time="0.002379">
+      <testcase name="testHostconfiguration" class="ConfigTest" file="/home/student/Desktop/grunt-php/tests/config1Test.php" line="6" assertions="1" time="0.001827"/>
+      <testcase name="testUserconfiguration" class="ConfigTest" file="/home/student/Desktop/grunt-php/tests/config1Test.php" line="10" assertions="1" time="0.000234"/>
+      <testcase name="testPasswordconfiguration" class="ConfigTest" file="/home/student/Desktop/grunt-php/tests/config1Test.php" line="14" assertions="1" time="0.000157"/>
+      <testcase name="testHelperconfiguration" class="ConfigTest" file="/home/student/Desktop/grunt-php/tests/config1Test.php" line="18" assertions="1" time="0.000161"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
