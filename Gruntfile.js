@@ -1,5 +1,6 @@
 module.exports=function(grunt){
 
+
 var dbconfig=require('./config.json')['dbconfig'];
 console.log("in grunt file");
 
