@@ -95,9 +95,26 @@ phpcpd:
      resultFile:'reports/result.html'
       }
 
+   },
+
+ jshint:
+  
+  {
+   all:['Gruntfile.js','ecomm_project/js/*'],
+  options:
+   {
+   curly:true,
+   eqnull:true,
+   browser:true,
+   undef:true,
+   globals:{jQuery:true}
    }
+   
+}
 
  
+
+
 
 
 };
@@ -109,7 +126,10 @@ grunt.loadNpmTasks("grunt-phploc");
 grunt.loadNpmTasks("grunt-phpmd");
 grunt.loadNpmTasks("grunt-phpunit"); 
 grunt.loadNpmTasks("grunt-phpcpd");
+grunt.loadNpmTasks("grunt-contrib-jshint");
  
 grunt.registerTask("default", ["phplint:good","phpmd","phploc","phpunit","phpcpd"]);
+
+grunt.registerTask("jstasks",["jshint"]);
 
 }
