@@ -67,11 +67,12 @@ default :
 
    phpunit:
     {
-    classes:{ dir:'tests'},
+    classes:{ dir:'tests/'},
     options:
     {
    bin :'vendor/bin/phpunit',
   colors:true,
+  bootstrap:'build/phpunit.xml',
   logJunit:'./reports/junit.log',
   logJson:'./reports/json.log',
    coverageClover:'./reports/coverage.log'
