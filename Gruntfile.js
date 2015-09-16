@@ -90,10 +90,9 @@ phpcpd:
       {
      quite:false,
      bin:'vendor/bin/phpcpd',
-     names:'ecomm_project/*.php',
      reportFile:'reports/cpdreport.xml',
-     miniLines:4,
-     miniTokens:69,
+     miniLines:5,
+     miniTokens:70,
      verbose:true,
      resultFile:'reports/result.html'
       }
