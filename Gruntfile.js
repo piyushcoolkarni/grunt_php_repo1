@@ -105,6 +105,8 @@ phpcpd:
    all:['Gruntfile.js','ecomm_project/js/*.js'],
   options:
    {
+   reporter:require('jshint-html-reporter'),
+   reporterOutput:'reports/jshint-report.html',
    curly:true,
    eqnull:true,
    browser:true,
